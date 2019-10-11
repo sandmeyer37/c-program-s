@@ -1,0 +1,100 @@
+
+#include <iostream>
+using namespace std;
+int main()
+{
+    /*
+
+    ///To find number is prime or not?
+
+    int n,count=0;
+    cout<<"enter a number: ";
+    cin>>n;
+    for(int i=1;i<=n;i++)
+    {
+        if(n%i==0)
+            count++;
+    }
+    if(count==2)
+    cout<<"Prime";
+        else
+        cout<<"Not Prime";
+
+*/
+ /*
+        ///To find facorial of a number
+
+      int i,n,fact=1;
+      cout<<"Enter the number to find factorial: ";
+      cin>>n;
+      for(i=1;i<=n;i++)
+        fact=fact*i;
+        cout<<"Factorial of "<<n<<" is "<<fact<<endl;
+
+        */
+/*
+        ///To find factors of a number
+        int n;
+        cout<<"Enter any number: ";
+        cin>>n;
+        for(int i=1;i<=n;i++)
+        {
+            if(n%i==0)
+                cout<<i<<endl;
+        }
+  */
+
+  /*
+  ///Multiplication table
+  int n=5,i;
+  //cout<<"Enter any number";
+  //cin>>n;
+  for(i=1;i<=5;i++)
+  {
+      //cout<<i;
+      cout<<n<<"X"<<i<<"="<<n*i<<endl;
+  }
+*/
+
+///Reverse of number(palindrome)
+
+int n,num,r,rev=0;
+cout<<"Enter the number: ";
+cin>>n;
+num=n;
+while(n!=0)
+    {
+    r=n%10;
+    n=n/10;
+    rev=rev*10+r;
+    }
+    cout<<"Value of n: "<<n<<endl;
+    cout<<"Value of num: "<<num<<endl;
+    cout<<rev<<endl;
+    cout<<"reverse is: "<<rev<<endl;
+    if(num==rev)
+        cout<<"Number is palindrome.";
+        else
+         cout<<"Number is not palindrome";
+
+/*
+        ///FIBONACCI SERIES
+    int n,j=0,i=1,sum=0;
+        cout<<"Enter number to find fibonacci series: ";
+        cin>>n;
+        cout<<"Element of F series are-"<<endl<<j<<"\t"<<i;
+        do
+        {
+            sum=i+j;
+             cout<<"\t"<<sum;
+            j=i;
+            i=sum;
+
+        }while(i<=n);
+        */
+
+
+
+return 0;
+
+}
