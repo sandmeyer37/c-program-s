@@ -1,0 +1,57 @@
+#include<iostream>
+using namespace std;
+
+class maths_fun{
+public:
+ float radius,length,breadth;
+ float circle_area()
+ {
+     return 3.14*radius*radius;
+ }
+ float circle_circumfrence()
+ {
+     return 2*3.14*radius;
+ }
+ float rectangle_area()
+ {
+     return length * breadth;
+ }
+ float rectangle_perimeter()
+ {
+     return 2*(length+breadth);
+ }
+};
+class circle: public maths_fun{
+public:
+    void display()
+    {
+    cout<<"Enter radius of circle: "<<endl;
+    cin>>radius;
+    cout<<"Circumference of circle is: "<<circle_circumfrence()<<endl;
+    cout<<"Area of circle: "<<circle_area()<<endl;
+    }
+};
+
+class rectangle: public maths_fun{
+public:
+void display1(){
+    cout<<"Enter length and breadth of rectangle: "<<endl;
+    cin>>length>>breadth;
+    cout<<"area of rectangle is: "<<rectangle_area()<<endl;
+    cout<<"Perimeter of rectangle is: "<<rectangle_perimeter()<<endl;
+
+}
+};
+class show: public circle, public rectangle{
+
+};
+
+int main()
+{
+    show a;
+    //a.circle_area();
+    //a.circle_circumfrence();
+    a.display();
+    a.display1();
+    return 0;
+}
